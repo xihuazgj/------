@@ -1,5 +1,5 @@
-网站截图如下
-![Snipaste_2024-07-13_14-17-07.jpg](https://img.picui.cn/free/2024/07/13/66921b63a9699.jpg)
+部分网站截图如下
+
 ![Snipaste_2024-07-13_14-17-00.jpg](https://img.picui.cn/free/2024/07/13/66921b63d986e.jpg)
 ![Snipaste_2024-07-13_14-16-52.jpg](https://img.picui.cn/free/2024/07/13/66921b6dd2954.jpg)
 ![Snipaste_2024-07-13_14-16-43.jpg](https://img.picui.cn/free/2024/07/13/66921b7171f04.jpg)
