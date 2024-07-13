@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>检测设备音量示例</title>
+</head>
+<body>
+<h1>检测设备音量示例</h1>
+<p>音量值：</p>
+<p id="volume"></p>
+
+<script>
+  navigator.mediaDevices.getUserMedia({ audio: true })
+          .then(stream => {
+            const audioTrack = stream.getAudioTracks()[0];
+            const audioSettings = audioTrack.getSettings();
+            const audioLevel = audioSettings.volume;
+
+            document.getElementById('volume').textContent = `音量值：${audioLevel}`;
+          })
+          .catch(error => {
+            console.error('无法获取音频输入设备：', error);
+            document.getElementById('volume').textContent = '无法获取音频输入设备。';
+          });
+</script>
+</body>
+</html>

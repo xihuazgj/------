@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/pm1.css"/>
+		<script type="text/javascript" src="./js/selector.js"></script>
+		<script type="text/javascript" src="./js/script1.js"></script>
+		<style>
+			#download1{
+				background-color: transparent;
+				border: none;
+				color: white;
+				cursor: pointer;
+				font-size: 16px;
+				outline: none;
+				padding: 10px 20px;
+				transition: background-color 0.3s ease-in-out;
+			}
+
+			#download1:hover {
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+		</style>
+		<style>
+			.touchable {
+				cursor: pointer;
+				opacity: 1;
+				transition: opacity 0.3s ease-in-out;
+			}
+
+			.touchable:hover {
+				opacity: 0.8;
+			}
+
+			.touchable:active {
+				opacity: 0.6;
+			}
+		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var lastBtn = document.querySelector('.last');
+				var playBtn = document.querySelector('.play');
+				var nextBtn = document.querySelector('.next');
+
+				lastBtn.addEventListener('touchstart', function() {
+					lastBtn.classList.add('touchable');
+				});
+				lastBtn.addEventListener('touchend', function() {
+					lastBtn.classList.remove('touchable');
+				});
+
+				playBtn.addEventListener('touchstart', function() {
+					playBtn.classList.add('touchable');
+				});
+				playBtn.addEventListener('touchend', function() {
+					playBtn.classList.remove('touchable');
+				});
+
+				nextBtn.addEventListener('touchstart', function() {
+					nextBtn.classList.add('touchable');
+				});
+				nextBtn.addEventListener('touchend', function() {
+					nextBtn.classList.remove('touchable');
+				});
+			});
+		</script>
+		<title>pm1</title>
+		<link rel="stylesheet" href="css/nav.css">
+	</head>
+	<body oncontextmenu="return false;" onselectstart="return false">
+		<!--[if lte IE 8]>
+		<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，请 <a href="https://support.dmeng.net/upgrade-your-browser.html" target="_blank">升级浏览器</a> 以获得更好的体验！</p>
+		<![endif]-->
+		<nav>
+			<div class="navtitle"><a href="index.html"><strong>Jay</strong> Chou</a></div>
+			<a href="html/music.html">音乐</a>
+			<a href="html/video.html">视频MV</a>
+			<a href="html/album.html">图集</a>
+			<a href="html/exhibit.html">专辑展</a>
+			<a href="html/about2.html">关于</a>
+			<a href="html/more.html">更多</a>
+			<a href="html/contact.html">联系我们</a>
+			<div class="navanim music"></div>
+			<div class="none"></div>
+		</nav>
+		</br>
+		<textarea name="" id="txt0" cols="30" rows="10" style="display: none;">
+			[ar:晴天 周杰伦]
+		[ti: 晴天 周杰伦 ]
+		[00:00.71]晴天 - 周杰伦
+		[00:28.84]故事的小黄花
+		[00:32.34]从出生那年就飘着
+		[00:35.85]童年的荡秋千
+		[00:39.41]随记忆一直晃到现在
+		[00:42.77]rui sou sou xi dou xi la
+		[00:45.50]sou la xi xi xi xi la xi la sou
+		[00:49.41]吹着前奏望着天空
+		[00:52.60]我想起花瓣试着掉落
+		[00:56.10]为你翘课的那一天
+		[00:58.29]花落的那一天
+		[01:00.14]教室的那一间
+		[01:01.79]我怎么看不见
+		[01:03.61]消失的下雨天
+		[01:05.38]我好想再淋一遍
+		[01:09.51]没想到失去的勇气我还留着
+		[01:15.72]好想再问一遍
+		[01:17.47]你会等待还是离开
+		[01:24.46]刮风这天我试过握着你手
+		[01:30.18]但偏偏雨渐渐大到我看你不见
+		[01:38.50]还要多久我才能在你身边
+		[01:44.93]等到放晴的那天也许我会比较好一点
+		[01:52.41]从前从前有个人爱你很久
+		[01:58.07]但偏偏风渐渐把距离吹得好远
+		[02:06.44]好不容易又能再多爱一天
+		[02:12.81]但故事的最后你好像还是说了拜拜
+		[02:33.93]为你翘课的那一天
+		[02:36.39]花落的那一天
+		[02:38.13]教室的那一间
+		[02:39.84]我怎么看不见
+		[02:41.55]消失的下雨天
+		[02:43.31]我好想再淋一遍
+		[02:47.39]没想到失去的勇气我还留着
+		[02:53.39]好想再问一遍
+		[02:55.49]你会等待还是离开
+		[03:02.46]刮风这天我试过握着你手
+		[03:08.12]但偏偏雨渐渐大到我看你不见
+		[03:16.54]还要多久我才能在你身边
+		[03:23.10]等到放晴的那天也许我会比较好一点
+		[03:30.49]从前从前有个人爱你很久
+		[03:36.26]但偏偏风渐渐把距离吹得好远
+		[03:44.48]好不容易又能再多爱一天
+		[03:51.05]但故事的最后你好像还是说了拜拜
+		[03:57.65]刮风这天我试过握着你手
+		[04:01.45]但偏偏雨渐渐大到我看你不见
+		[04:04.98]还要多久我才能够在你身边
+		[04:08.64]等到放晴那天也许我会比较好一点
+		[04:12.34]从前从前有个人爱你很久
+		[04:15.40]但偏偏雨渐渐把距离吹得好远
+		[04:19.05]好不容易又能再多爱一天
+		[04:22.42]但故事的最后你好像还是说了吧
+
+		</textarea>
+		
+		<textarea name="" id="txt1" cols="30" rows="10" style="display: none;">
+			[ti:她的睫毛]
+		[ar:周杰伦]
+		[al:叶惠美]
+		[00:00.01]她的睫毛
+		[00:07.54]作词：方文山　作曲：周杰伦
+		[00:09.43]演唱：周杰伦
+		[00:12.50]
+		[00:19.82]亲爱的总有些事没办法教　
+		[00:23.65]表错情的感觉有一点糟
+		[00:26.95]赖着不走会让人很感冒　
+		[00:30.05]以上这道理我全都了
+		[00:32.16]
+		[00:33.17]我将不该犯的错都默背好
+		[00:36.46]仔细观察她的喜好
+		[00:39.84]而我紧绷的外表 像上紧后的发条
+		[00:42.99]等她的答案揭晓
+		[02:51.17][00:45.03]
+		[02:52.14][00:45.93]她的睫毛 弯的嘴角 无预警的对我笑
+		[02:58.48][00:52.25]没有预兆 出乎预料 竟然先对我示好
+		[03:04.69][00:58.37]她的睫毛 弯的嘴角 用眼神对我拍照
+		[03:11.02][01:04.86]我戒不掉 她的微笑 洋溢幸福的味道
+		[01:10.72]
+		[01:11.63]有些事没办法教　
+		[01:14.12]表错情的感觉有一点糟
+		[01:17.44]赖着不走会让人很感冒　
+		[01:20.44]以上这道理我全都了
+		[01:22.58]
+		[01:23.55]恋爱的方式无法拿笔来抄　
+		[01:26.77]也没有规则可以取巧
+		[01:30.19]被动的缘分很不可靠　
+		[01:33.20]喜欢的对象要自己挑
+		[02:38.98][01:48.36][01:35.72]
+		[02:39.63][02:25.91][01:49.01][01:36.40]她粉嫩清纯的外表
+		[02:42.08][02:29.42][01:51.55][01:38.97]像是多汁的水蜜桃 谁都想咬
+		[02:45.47][02:33.21][01:55.30][01:42.75]她嘴上亮丽的唇膏
+		[02:48.34][02:35.74][01:57.96][01:45.37]有一股自信的骄傲 我看得到
+		[03:16.47][02:00.98]
+		[03:17.39]RAP:她的睫毛 弯的嘴角 无预警的对我笑
+		[03:20.53]没有预兆 出乎预料 竟然先对我示好
+		[03:23.66]她的睫毛 弯的嘴角 用眼神对我拍照
+		[03:26.99]我戒不掉 她的微笑 洋溢幸福的味道
+		[03:30.11]
+
+
+		</textarea>
+		
+		<div class="page Opage" >
+			<div class="main">
+				
+				<div class="Lbox l">
+					<img src="./img1/0.jpg" ><br>
+					<a href="../music1/mp3/0.mp3" download="晴天" style="color: black"><span class="download">下载歌曲《晴天》</span></a>
+					<br>
+					<br>
+					<a href="../music1/mp3/1.mp3" download="她的睫毛" style="color:black"><span class="download">下载歌曲《她的睫毛》</span></a>
+
+
+				</div>
+				
+				<div class="Rbox r">
+					<h2 class="songName"></h2>
+					<span class="singer"></span>
+					<div class="Lyric"></div>
+				</div>
+			
+			</div>
+			<div class="footer">
+				<div class="main">
+					
+					<div class="l left">
+						<span class="last iconfont icon-kuaitui" title="上一首"></span>&nbsp;&nbsp;
+						<span class="play iconfont Iconfont icon-zanting" title="播放"></span>&nbsp;&nbsp;
+						<span class="next iconfont icon-kuaijin" title="下一首"></span>
+					</div>
+					
+					<div class="content clearfix">
+						<a class="l" ><img src="./img1/0.jpg" title="点击全屏"></a>&nbsp;
+						<div class="Box">
+							<span class="songName l"></span><span class="l">&nbsp;-&nbsp;</span><span class="singer l"></span>
+							<span class="r">
+								<span class="realTime">00:00</span>&nbsp;/&nbsp;<span class="totalTime"></span>
+							</span><br>
+							<div class="strip">
+								<div class="progress"></div>
+								<span class="spot"></span>
+							</div>
+						</div>
+						<div class="volumeBox" style="display: none;">
+							<div class="groove">
+								<div class="volume"></div>
+								<span class="volumeSpot"></span>
+							</div>
+							<div class="triangle"></div>
+						</div>&nbsp;
+						<span class="iconfont icon-shengyin"></span>
+					</div>
+					
+					<div class="r right">
+						<div class="list" style="display: none;">
+							<div class="Song"></div>
+						</div>
+						<div class="listTriangle" style="display: none;"></div>
+						<div class="gengduoBox" style="display: none;">
+							<span class="project iconfont icon-fenxiang" title="分享"></span>
+							<div class="boxTriangle" style="display: none;"></div>
+						</div>
+						<span class="iconfont loop icon-liebiaoxunhuan" title="循环方式"></span>&nbsp;&nbsp;&nbsp;
+						<span class="iconfont love icon-xihuan1" title="喜欢"></span>&nbsp;&nbsp;&nbsp;
+						<button id="download1">Blob下载</button>&nbsp;&nbsp;&nbsp;
+						<span class="iconfont icon-liebiao liebiao" title="播放列表" style="font-size: 26px;"></span>&nbsp;&nbsp;&nbsp;
+						<span class="iconfont icon-shezhi gengduo" title="更多" style="font-size: 26px;"></span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<audio id="myMusic1" src="./music1/ogg/0.ogg">
+			您的浏览器不支持 audio 元素。
+		</audio>
+		<script>
+			const downloadBtn = document.getElementById('download1');
+
+			// 模拟需要下载的文件内容
+			const content = '这是一个需要下载的文件内容。';
+			const contentType = 'music/plain'; // 文件类型
+			const fileName = '晴天.mp3'; // 文件名
+
+			downloadBtn.addEventListener('click', () => {
+				const blob = new Blob([content], { type: contentType });
+				const url = URL.createObjectURL(blob);
+
+				const link = document.createElement('a');
+				link.href = "./music1/mp3/0.mp3";
+				link.download = fileName;
+				link.click();
+
+				URL.revokeObjectURL(url);
+			});
+		</script>
+	</body>
+</html>
